@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+
+.card-icon img{
+    max-width:20%;
+    padding-top:10%;
+}
+
+.nav-brand{
+    max-width:120px;
+}
+
+.mint-card{
+    border-color: #ffd400;
+    border-style: solid;
+    border-width: 2px;
+    transition: transform .1s;
+}
+
+.mint-card:hover{
+    transform: scale(1.17)
+}
+.v-line{
+    border-radius: 5px;
+    padding: 2px;
+    width: 5px;
+    height: 50px;
+    background-color: #ffd400;
+    margin: auto;
+
+}
+
+.h-line{
+    border-radius: 5px;
+    padding: 2px;
+    width: 50px;
+    height: 5px;
+    background-color: #ffd400;
+    margin: auto;
+}
+
+.number-highlighter{
+    font-size: 100px;
+    font-weight:bold;
+    color:#ffd400 ;
+    /* opacity: 50%; */
+}
+
+.mint-container{
+    padding: 50px 100px;
+    background-color: black;
+}
+
+.mint-container-light{
+    background-color: #F7F7F8;
+    padding: 50px;
+   
+}
+
+.color-primary{
+color: #ffd400;
+}
+
+.color-secondary{
+    color: #ffd000;
+}
+
+.border-full{
+border: 1px #ffd400 solid;
+}
+
+.border-right{
+
+    border-right: solid;
+    border-width: 1px;
+    border-color:#ffd400 ;
+}
+
+.img-container{
+    height: 300px;
+    padding-top: 100px;
+    background-image: url("Images/pexels-negative-space-34577.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.mint-container-feedback{
+    background-image: url(Images/work-together.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bttn{
+    width:100%;
+    background-color: #ffd400;
+}
+
+.bttn:hover{
+    width:100%;
+    opacity: .8;
+}
+
+.fa-sign-in{
+    color: #ffd400;
+    padding-right: 5px;
+}
+
+.fa-user-circle{
+
+    color: #ffd400;
+    padding-right: 5px;
+}
+
+.nav-link{
+    display: block;
+    margin: auto;
+
+}
+
+.mint-link{
+    text-decoration: none;
+    color: white;
+}
+
+.mint-link:hover{
+    text-decoration:underline;
+    color: #ffd400;
+}
+
+.feedback{
+    border: 1px solid #ffd400;
+    border-radius: 10px;
+}
+
+.signup{
+    text-decoration: none;
+     color: #ffd400;
+}
+
+.signup:hover{
+    opacity: .8;
+}
+
+.login{
+    text-decoration: none;
+    color: #ffd400;
+}
+
+.login:hover{
+    opacity: .8;
+}
+
+.modal-header{
+    background-color: #ffd400;
+}
+
+.btn-login{
+    background-color: #ffd400;
+    transition: transform .1s;
+}
+
+.btn-login:hover{
+    transform: scale(1.03);
+}
+
+.mint-input-style-1:hover{
+    border:#ffd400 solid 2px;
+}
+
+.icon-zoomer{
+    transition: transform .1s;
+}
+
+.icon-zoomer:hover{
+    transform: scale(1.3);
+}
+
+.bttn-zoomer{
+    transition: transform .1s;
+}
+
+.bttn-zoomer:hover{
+    transform: scale(1.3);
+}
+
+.pwd{
+text-decoration: none;
+color: #ffbb00;
+}
+
+.pwd:hover{
+    text-decoration: underline;
+    color: #ffd000;
+}
+
+.offer-link{
+    text-decoration: none;
+    color: black;
+}
+
+.category{
+    background-color: transparent;
+    background-color: #ffd400;
+    color:white;
+  }
+  
+
+  .category:hover{
+      background-color: #000000;
+      
+  }
+  
+
+@media screen and (max-width: 425px ) {
+    .mint-container{
+        padding: 50px 20px;
+        background-color: black;
+    }
+
+    .mint-container-light{
+        background-color: #F7F7F8;
+        padding: 10px 10px;
+    }
+
+    .img-container{
+        height: 400px;
+        padding: 50px 10px;
+        background-image: url("Images/pexels-negative-space-34577.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px ) {
+    .border-right{
+        border-right: none;  
+    }
+
+    .img-container{
+        height: 300px;
+        padding: 70px 10px;
+        background-image: url("Images/pexels-negative-space-34577.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
+
+
+@media screen and (max-width: 768px ){
+
+    .signup{
+        color: white;   
+    }
+
+    .login{
+        color: white;
+
+    }
+
+    .fa-sign-in{
+        display: none;
+        color: #ffd400;
+        padding-right: 5px;
+    }
+
+    .fa-user-circle{
+        display: none;
+        color: #ffd400;
+        padding-right: 5px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px ) {
+    .border-right{
+        border-right: none;  
+    }
+
+    .img-container{
+        height: 300px;
+        padding: 70px 10px;
+        background-image: url("Images/pexels-negative-space-34577.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+}
+.jumbotron {
+    color: black;
+    background-image: url("/Images/banner.jpg");
+    background-color: #ebebed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }

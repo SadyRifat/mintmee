@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- slick CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/Favicon.png"/>
+    <title>Mintmee</title>
+  </head>
+
+
+  <body>
+
+
+    <header>
+      <!-- navber -->
+
+      <nav>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="Images/brand-logo.png" alt="brand logo" class="nav-brand">
+                <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link mint-link text-white" href="#"><span class="about-us">About us</span></a>
+                      <a class="nav-link mint-link text-white" href="#"><span class="contact pe-lg-5">Contact</span></a>
+
+                      <!-- Login Button  -->
+                      <a href="#" class="nav-link login" data-bs-toggle="modal" data-bs-target="#loginBtn"><i class="fa fa-sign-in " aria-hidden="true"></i></i>
+                          <span class="login">Login</span>
+                      </a>
+                          
+                      <!-- Modal content -->
+                      <div class="modal fade" id="loginBtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="loginBtnLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title text-uppercase fw-bolder ps-4 ps-md-5" id="loginBtnLabel">Login to Mintmee</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body p-4 p-md-5 mb-5">
+                                    <form action="">
+                                       <div class="form-floating mb-3">
+                                           <input type="email" class="form-control mint-input-style-1" id="floatingEmail" placeholder="name@example.com">
+                                           <label for="floatingEmail">Email address</label>
+                                       </div>
+                                       <div class="form-floating">
+                                           <input type="password" class="form-control mint-input-style-1" id="floatingPassword" placeholder="Password">
+                                           <label for="floatingPassword">Password</label>
+                                       </div>
+                                       <div class="form-check pt-1">
+                                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                           <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                       </div>
+                                       <div class="d-grid mt-3">
+                                           <button class="btn btn-login fw-bolder" type="button">Login</button>
+                                       </div>
+                                       <span class="d-block pt-2  fw-bolder">Forget <a href="#" class="pwd">Password?</a></span>
+                                       <div class="social-media-login mt-5">
+                                           <span class="pr-2"><b>Or Login with</b></span>
+                                          <a
+                                           class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #4267B2;" role="button"><i class="fab fa-facebook-f"></i></a>
+                                          <a
+                                            class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #1DA1F2;" role="button"><i class="fab fa-twitter"></i></a>
+                                          <a
+                                            class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #EA4335;" class="text-white" role="button"><i class="fab fa-google"></i></a>
+                                       </div>
+                                    </form>
+                                  </div>
+                          </div>
+                          </div>
+                      </div>
+
+                      <!-- Signup Button -->
+                      <a href="#" class="nav-link signup mb-3 mb-lg-0" data-bs-toggle="modal" data-bs-target="#signupBtn"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                          <span class="signup">Signup</span>
+                      </a>
+                          
+                      <!-- Modal content -->
+                      <div class="modal fade" id="signupBtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="signupBtnLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title fw-bolder text-uppercase ps-4 ps-md-5" id="loginBtnLabel">Signup to Mintmee</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body p-4 p-md-5 mb-5">
+                                    <form action="">
+                                       <div class="form-floating mb-3">
+                                           <input type="email" class="form-control mint-input-style-1" id="floatingEmail" placeholder="name@example.com">
+                                           <label for="floatingEmail">Email address</label>
+                                       </div>
+                                       <div class="form-floating">
+                                           <input type="password" class="form-control mint-input-style-1" id="floatingPassword" placeholder="Password">
+                                           <label for="floatingPassword">Password</label>
+                                       </div>
+                                       <div class="form-floating mt-3">
+                                        <input type="password" class="form-control mint-input-style-1" id="floatingConfirmPassword" placeholder="Password">
+                                        <label for="floatingConfirmPassword">Confirm password</label>
+                                    </div>
+                                       <div class="form-check pt-1">
+                                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                           <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                       </div>
+                                       <div class="d-grid mt-3">
+                                           <button class="btn btn-login fw-bolder" role="button" type="button">Signup</button>
+                                       </div>
+                                       <span class="d-block pt-2 fw-bolder">Already have an <a href="#" class=" text-warning pwd">Account?</a></span>
+                                       <div class="social-media-login mt-5">
+                                           <span class="pr-2"><b>Or Signup with</b></span>
+                                          <a
+                                           class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #4267B2;" role="button"><i class="fab fa-facebook-f"></i></a>
+                                          <a
+                                            class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #1DA1F2;" role="button"><i class="fab fa-twitter"></i></a>
+                                          <a
+                                            class="btn btn-floating m-1 text-white icon-zoomer" style="background-color: #EA4335;" class="text-white" role="button"><i class="fab fa-google"></i></a>
+                                       </div>
+                                    </form>
+                                  </div>
+                                  <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Login</button>
+                                  </div> -->
+                          </div>
+                          </div>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    
+    </header>
+
+    <main>
+
+      <div class="jumbotron mint-container jumbotron-fluid">
+        <div class="container p-5">
+          <h1 class="fw-bolder display-4">We're Getting Ready to Launch</h1>
+          <p>Our website is coming soon and we are currently working very hard to give you the best experience on our new website</p>
+        </div>
+      </div>
+
+      <!-- how it works -->
+
+      <div class="container mt-5">
+        <div class="v-line mb-3"></div>
+        <div class="h1 fw-bolder text-center">HOW IT WORKS</div>
+        <div class="h6 text-center">Get cashback for every receipt you upload or you can use our co-branded prepaid card and get paid automatically</div>
+
+        <div class="row mt-3 mt-xl-5">
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card mint-card card-icon p-3 ">
+              <img src="Images/SVG/Browse.svg" alt="" class="card-img-top d-block m-auto">
+             <div class="card-body">
+              <h3 class="card-title fw-bolder text-center">Browse</h3>
+              <p class="card-text text-center">Browse your favourite offers from Mintmee</p>
+             </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card mint-card card-icon p-3 ">
+              <img src="Images/SVG/Shopping.svg" alt="" class="card-img-top d-block m-auto">
+              <div class="card-body">
+                <h3 class="card-title fw-bolder text-center">Shop</h3>
+              <p class="card-text text-center">Book all your favourite offers from Mintmee</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card mint-card card-icon p-3">
+              <img src="Images/SVG/Receipt.svg" alt="" class="card-img-top d-block m-auto">
+              <div class="card-body">
+                <h3 class="card-title fw-bolder text-center">Upload Receipt</h3>
+              <p class="card-text text-center">Collect receipts and upload to your account</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="card mint-card card-icon p-3 ">
+              <img src="Images/SVG/Money-transfer.svg" alt="" class="card-img-top d-block m-auto">
+              <div class="card-body">
+                <h3 class="card-title fw-bolder text-center">Transfer Money</h3>
+              <p class="card-text text-center">Transfer money from Mint-Wallet to your bank account</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- you can earn -->
+
+      <div class="container-fluid mint-container text-light mt-5">       
+        <div class="row mt-3">
+          <div class="col-12 col-lg-12 col-xl-4 d-block p-xl-5 my-auto  border-right">
+            <div class="h1 fw-bolder color-primary">YOUR SHOPPING POSSIBILITIES</div>
+            <div class="h6">Mintmee is the best place for shopping. You can earn both extra cashback and shopping points by using Mintmee. It means the more shopping the more rewards</div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-4 ps-3 ps-xl-5">
+              <span class="number-highlighter">01.</span>
+              <div class="h1 fw-bolder">Cash Back</div>
+              <ul>
+                <li>Up to 15% of the total purchase price back</li>
+                <li>Continue shopping with the Cashback that you have collected</li>
+                <li>Optional pay out from $10 collected</li>
+              </ul>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-4 ps-3 ">
+              <span class="number-highlighter">02.</span>
+              <div class="h1 fw-bolder">Shopping Points</div>
+              <ul>
+                <li>You also collect Shopping Points on all your purchases</li>
+                <li>Discover our great Deals in the Benefit Lounge</li>
+                <li>Redeem your Shopping Points and get your hands on incredible discounts
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BENEFITS AT LOCAL PARTNERS -->
+
+      <div class="container mt-5">
+        <div class="v-line"></div>
+        <div class="p-3">
+          <div class="h1 fw-bolder text-center">YOUR <span class="color-primary">BENEFITS</span><br> AT LOCAL PARTNERS</div>
+          <div class="h5 text-center pb-5">With mintmee, you can easily collect your Benefits in-store at Partner. You can find out which local Partners are near you with mintmee radius search or using the search feature on our website.
+          </div>
+        </div>  
+      </div>
+
+    <!-- FLEXIBLE FACILITIES -->
+
+      <div class="h-line"></div>
+      <div class="container mt-5 mb-5">
+        <div class="p-3">
+          <div class="h1 fw-bolder text-center">FLEXIBLE FACILITIES <br> WITH  <span class="color-primary">MINTMEE</span></div>
+          <div class="h5 text-center">With our Mintmee, you can enjoy Benefits on all your purchases, even when you're on the move.
+          </div>
+        </div> 
+        <div class="mint-container-light mt-3">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mb-3 bg-transparent">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img src="Images/loupe.png" class="float-end pt-3" alt="find icon">
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Find</h5>
+                      <p class="card-text">Find all online and local Partners</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mb-3 bg-transparent">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img src="Images/deals.png" class="float-end pt-3" alt="Secure deals">
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Secure Deals</h5>
+                      <p class="card-text">Secure Deals and redeem coupon codes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mb-3 bg-transparent">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img src="Images/log-in.png" class="float-end pt-3" alt="Easy access">
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Easy Access</h5>
+                      <p class="card-text">Easy access to your profile and your purchases</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mb-3 bg-transparent">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img src="Images/share.png" class="float-end pt-3" alt="Share">
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Share Deals</h5>
+                      <p class="card-text">Share deals and feels through instant massaging</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mb-3 bg-transparent ">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img src="Images/credit-card.png" class="float-end pt-3" alt="Card">
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bolder">Card</h5>
+                      <p class="card-text">Get free co-branded pre-paid card without a bank account</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+        
+
+        <!-- HOW WE EMPOWER -->
+        <div class="v-line"></div>
+        <div class="h1 fw-bolder text-center pt-3">HOW WE <span class="color-primary">EMPOWER</span></div>
+        <div class="container-fluid mt-3 p-3 p-lg-5" style="background-color: black;">
+         <div class="container">
+          <div class="row color-primary">
+            <div class="col-12 col-lg-6 pe-lg-5 border-right">
+             <div class="h3 fw-bolder text-center pt-3">Mintmee for <span class="color-scondary">Individual</span>
+             </div>
+             <table class="table table-borderless text-light mt-3">  
+               <tr>
+                <td class="h5 fw-bolder text-end pe-2 pe-sm-5">SHOP</td>
+                <td class="h5">Visit our shopping partner and shop whatever you want</td>
+              </tr>
+              <tr>
+                <td class="h5 fw-bolder text-end pe-2 pe-sm-5">PAY</td>
+                <td class="h5">Pay via <span class="color-scondary fw-bolder">mintCard</span> (a bankless bank card) or Cash</td>
+              </tr>
+              <tr>
+                <td class="h5 fw-bolder text-end pe-2 pe-sm-5">EARN</td>
+                <td class="h5">Buy online or in-store with the privilege of <span class="color-scondary fw-bolder">cashback</span>  in every purchease</td>
+              </tr>
+              <tr>
+                <td class="h5 fw-bolder text-end pe-2 pe-sm-5">SHARE</td>
+                <td class="h5">Discover deals and share with your friends and family</td>
+              </tr>
+             </table>
+          </div>
+             <div class="col-12 col-lg-6 ps-lg-5">
+               <div class="h3 fw-bolder text-center pt-3">Mintmee for <span class="color-scondary">Business</span></div>
+               <table class="table table-borderless text-light mt-3">  
+                 <tr>
+                 <td class="h5 fw-bolder text-end pe-2 pe-sm-5">PROMOTE</td>
+                 <td class="h5">Use our marketplace to reach millions of customers</td>
+               </tr>
+               <tr>
+                 <td class="h5 fw-bolder text-end pe-2 pe-sm-5">REACH</td>
+                 <td class="h5">Get your type of customer</td>
+               </tr>
+               <tr>
+                 <td class="h5 fw-bolder text-end pe-2 pe-sm-5">CONNECT</td>
+                 <td class="h5">Always connect to customers via push notification to mintmee account</td>
+               </tr>
+               <tr>
+                 <td class="h5 fw-bolder text-end pe-2 pe-sm-5">GROW</td>
+                 <td class="h5">Grow with the data-driven sales that impact your business</td>
+               </tr>
+               </table>
+             </div>
+           </div>
+         </div>
+        </div> 
+
+      <!-- Getting your In-Store Cash Back -->
+
+        <div class="img-container mb-5">
+          <div class="container">
+            <div class="h1 fw-bolder color-primary text-uppercase text-center">Getting your In-Store Cash Back</div>
+             <div class="h5 text-center text-light">
+              Just like online Cash Back, In-Store Cash Back must be confirmed by the store. This could take a few hours or days. Once the store confirms your purchase, you’ll see the Cash Back in your account. We’ll also send you an email letting you know your Cash Back is on its way
+          </div>
+          </div>
+        </div>
+
+        <!-- maximizing In-Store Cash Back -->
+        <div class="v-line"></div>
+        <div class="h1 fw-bolder text-uppercase text-center pt-3 ms-3 me-3">Tips for <span class="color-primary">maximizing </span> your <br>In-Store Cash Back</div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <img src="Images/Plain credit card.gif" alt="Device mockup" class="d-block my-auto pt-lg-5 pt-xl-0" width="100%">
+            </div>
+            <div class="col-12 col-lg-6 pt-xl-4">
+              <div class="card border-0 p-3 ">
+                <div class="row g-0 ">
+                  <div class="col-2">
+                    <img src="Images/light-bulb.png" class="float-end p-3" alt="Tips">
+                  </div>
+                  <div class="col-10">
+                    <div class="card-body">
+                      <h5 class="card-text">Relink the store offers after you shop. Linked offers are valid for one purchase only.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 p-3">
+                <div class="row g-0">
+                  <div class="col-2">
+                    <img src="Images/light-bulb.png" class="float-end p-3" alt="Tips">
+                  </div>
+                  <div class="col-10">
+                    <div class="card-body">
+                      <h5 class="card-text">Easily use our site to link an offer right in the store! Linked offers are available for use instantly.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 p-3">
+                <div class="row g-0">
+                  <div class="col-2">
+                    <img src="Images/light-bulb.png" class="float-end p-3" alt="Tips">
+                  </div>
+                  <div class="col-10">
+                    <div class="card-body">
+                      <h5 class="card-text">Make sure push notifications are turned on so you’ll be alerted to exclusive In-store Cash Back deals near you.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- category -->
+
+        <div class="v-line"></div>
+
+        <div class="h1 fw-bolder text-center mt-3 mb-3"> CATAGORIES</div>
+
+        <div class="container">
+          <div class="row color-secondary p-2 mb-3 mb-md-5">
+              <div class="col-6 col-md-4 col-xl-2">
+                  <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-heartbeat fa-3x"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Lifestyle</h5>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-xl-2">
+                <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-tv fa-3x"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Electronics</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-utensils fa-3x"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Restaurant</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-plane fa-3x"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Travel</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-tshirt fa-3x"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Fashoin</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card category text-center border-full pt-4 mb-3">
+                    <i class="fas fa-shopping-basket fa-3x"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Groceries</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+        <!-- product card -->
+
+        <div class="container-fluid bg-light p-lg-5 p-4">
+          <div class="h1 text-uppercase fw-bolder text-center">Latest <span class="color-primary">Offers</span></div>
+          <div class="container">
+              <div class="product-slider">
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer" style="max-width: 20 rem;">
+                          <img src="Images/Aarong.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Aarong</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Bata.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Bata</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Samsung.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Samsung</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/RFL.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">RFL</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Radisson.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Radisson</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Vision.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Vision</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                          <div class="card card-offer">
+                            <img src="Images/Singer.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title fw-bolder">Singer</h4>
+                              <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                            </div>
+                          </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/KFC.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">KFC</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Transcom.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Transcom</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Walton.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Walton</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/Vivo.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Vivo</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+  
+                  <div class="product-1 p-sm-2">
+                      <div class="card card-offer">
+                          <img src="Images/MI.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h4 class="card-title fw-bolder">Xiaomi</h4>
+                            <p><a class="offer-link"><b>10% Cash Back</b></a> Was 2% </p>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- work together -->
+        <div class="container-fluid mint-container-feedback">
+          <div class="container">
+            <div class="row p-2 pt-lg-5 pb-lg-5">
+              <div class="col-12 col-lg-6 p-4 p-lg-5 d-bloc my-auto">
+                <div class="h1 fw-bolder text-uppercase color-primary">ABOUT US</div>
+                <div class="h5 text-light">Mintmee has helped shape the way people shop in-store or online, offering Cash Back, deals and shopping rewards on the best selection of products and services. We believe in creating true win-win opportunities that foster awareness, engagement and purchases for our members and merchants while delivering rewarding cashback experiences.</div>
+              </div>
+              <div class="col-12 col-lg-6 p-4 p-lg-5 mb-5 mb-lg-3 ">
+                <div class="feedback p-3 p-lg-5">
+                  <div class="h2 fw-bolder color-primary mb-3 mb-lg-5">LET’S WORK TOGETHER TO GROW </div>
+                <div class="mb-3 text-light ">
+                  <label for="exampleFormControlInput1" class="form-label">Your email </label>
+                  <input type="email" class="form-control border-full" id="exampleFormControlInput1" style="background: transparent">
+                </div>
+                <div class=" text-light mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">How can we help you?</label>
+                  <textarea class="form-control border-full" id="exampleFormControlTextarea1" rows="4" style="background: transparent"></textarea>
+                </div>
+                <button class="btn bttn" role="button" type="submit"><p class="h5 fw-bolder">Submit</p></button>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+          
+    </main>
+      
+      
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-md-start pt-xl-5" style="background-color: black;">
+   
+    <div class="container p-4 pb-0">
+      <section class="footer-uper">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 color-primary fw-bolder">
+              Mintmee
+            </h6>
+            <p class="text-white">
+              Our mission is to help brands of all sizes by connecting you to our ready-to-shop members, optimize your marketing plans and accelerate growth with Cash Back rewards.
+            </p>
+          </div>
+
+          <hr class="w-100 color-primary clearfix d-md-none" />
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 color-primary fw-bolder">
+              Useful links
+            </h6>
+            <p>
+              <a class=" mint-link">Privacy Policy</a>
+            </p>
+            <p>
+              <a class="mint-link">Terms & conditions</a>
+            </p>
+            <p>
+              <a class="mint-link">Cashback policy</a>
+            </p>
+            <p>
+              <a class="mint-link">Help</a>
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix color-primary d-md-none" />
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 color-primary fw-bolder ">Contact</h6>
+            <p><a href="#" class="mint-link"><i class="fas fa-envelope color-primary me-2"></i> hi@mintmee.com</a></p>
+            <p><a href="#" class="mint-link"><i class="fas fa-envelope color-primary me-2"></i> partners@mintmee.com</a></p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <hr class="my-3 color-primary">
+
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-white text-center text-md-start">
+            <div class="p-3">
+              © 2021 Copyright:
+              <a class="mint-link" href="#"
+                 >Mintmee</a
+                >
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <a
+               class="btn border-full btn-floating m-1 color-primary" href="https://www.facebook.com/Mintmee-102645888027316" target="_blank" rel="noopener noreferrer" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a
+               class="btn border-full btn-floating m-1 color-primary" role="button"><i class="fab fa-twitter"></i></a>
+            <a
+               class="btn border-full btn-floating color-primary m-1" href="https://www.linkedin.com/company/mintmee" target="_blank" rel="noopener noreferrer" role="button"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </footer>
+    
+    <script type="text/javascript" src=" https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Index.js"></script>
+
+  </body>
+</html>
